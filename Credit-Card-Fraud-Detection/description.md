@@ -1,10 +1,43 @@
 ## Introduction
 
-Utilizing specific predictive models, we forecast credit card fraud in the transactional dataset in this project. In the following project, a wide range of Python libraries is exploited-- this includes Numpy (used to work with arrays + functions for working in domain of linear algebra, Fourier Transform, and matrics), pandas (facilitates working with datasets; functions for analyzing, cleaning, exploring, and manipulating data), seaborn (provides a high-level interface for drawing attractive and informative statistical graphics), matplotlib, etc.
+In this 
 
-I have worked with the two validation matrices-- recall matrix and precision matrix, using Numpy. 
+![image](https://github.com/user-attachments/assets/43439fb3-7c0b-48c4-bc33-4ca1529cc2c7)
+
+Credit card fraud is a form of identity fraud/theft. It happens when an unauthorized transaction is made using a credit card without explicit permission from the cardholder. There are various ways card fraud can be conducted...
+
+Fraudsters can get discarded receipts or credit card statements that include your account number and use that information to rack up fraudulent charges.
+Credit card info can be leaked during an online transaction, and then unauthorized purchases can be conducted using this information.
+Credit card information can be stolen using a card skimmer installed at ATMs
+Card fraud is a big problem for card issuers and banks as it accounts for a substantial chunk of revenue loss. As per Annual Fraud Statistics Released by The Nilson Report, fraud losses reached USD 27.8 billion in 2019 and expect to go up to USD 35.67 billion in the next five years.
+
+
+## Objective
+
+To implement proactive monitoring, prevention mechanisms, reduce time-consuming manual reviews and human errors, this project aims to build and train
+
+
+
  
- 
+
+## Dataset
+
+* Dataset contains credit card transactions done by European cardholders in 2013 for two days
+
+* There are 284,807 total transactions
+
+* 492 transactions are fraudulent
+
+* The positive class (frauds) are only 0.172%
+
+* Dataset has 31 features, 30 independent and one dependent column.
+
+* Due to confidentiality reasons, 28 out of 30 independent features are transformed to numerical values using PCA. The remaining two features, time and amount, are left intact.
+
+* Fraudulent transactions are marked as 1 (Positive class), and genuine transactions are marked as 0 (negative class)
+
+
+
 
 ## Precision, Recall Matrices
 
