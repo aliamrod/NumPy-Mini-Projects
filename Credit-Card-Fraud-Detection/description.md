@@ -12,7 +12,7 @@ Both precision and recall are crucial for information retrieval, where positive 
 
 While searching something on the web, the model does not care about something **irrelevant** and **not retrieved** (this is the true negative case). Therefore, only TP, FP, FN are used in precision and recall. 
 
-Precision
+#### Precision
 
 Out of all the positive cases predicted, what percentage is *truly positive. 
 
@@ -20,7 +20,7 @@ Out of all the positive cases predicted, what percentage is *truly positive.
 
 
 
-Recall
+#### Recall
 
 Out of all the positive cases reported, what percentage are predicted positive. It is the same as TPR (true positive rate). 
 
