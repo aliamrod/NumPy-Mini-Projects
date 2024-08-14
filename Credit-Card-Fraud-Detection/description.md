@@ -37,6 +37,10 @@ To implement proactive monitoring, prevention mechanisms, reduce time-consuming 
 * Fraudulent transactions are marked as 1 (Positive class), and genuine transactions are marked as 0 (negative class)
 
 
+## Evaluation Criteria
+
+* `roc_auc` will be used as the primary metric for model evaluation and performance comparison.
+* We will also monitor the `precision` and `recall` for each of the models we build as they can give valuable insigns for different use-cases. 
 
 
 ## Precision, Recall Matrices
