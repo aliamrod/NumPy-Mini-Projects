@@ -45,9 +45,12 @@ To implement proactive monitoring, prevention mechanisms, reduce time-consuming 
 ## Solution Approach
 
 * We start with Exploratory Data Analysis to get in-depth data understanding, how predictors are affecting/not affecting the target variable and if given predictors are helpful to us for model building. We then move to Data preparation where we try to remove skewness from data, split the data in test, train splits, and apply the standardization required.
-* First, we build various models like LogisticRegression, DecisionTree, LinearSVC, RandomForest, and XGBoost using the imbalanced dataset.
+* First, we build various models like `LogisticRegression`, `DecisionTree`, `LinearSVC`, `RandomForest`, and `XGBoost` using the imbalanced dataset.
 * Models are cross-validated using five-fold cross-validation to tune its hyper-parameters, then re-fit the model using the best parameters obtained. We select the best model using various metrics from all the best models selected.
-* roc_auc is the primary metric for model evaluation and performance comparison. We also monitor and report the precision and recall metrics for each of the models we build as they can give valuable insights for different use-cases.
+* `roc_auc` is the primary metric for model evaluation and performance comparison. We also monitor and report the `precision` and `recall` metrics for each of the models we build as they can give valuable insights for different use-cases.
+* Depending upon the organization's objective, `precision` or `recall` could be one of the vital metrics for selecting a model.
+ - If the organization is looking to catch most of the frauds while compromising on false-alarm where genuine transactions are classified as fraud; then we'll monitor 'recall.'
+ - If reducing the false alarm is the primary concern, then precision could be the go-to metric.
 * 
 
 ## Precision, Recall Matrices
